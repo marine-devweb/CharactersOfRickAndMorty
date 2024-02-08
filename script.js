@@ -5,7 +5,7 @@ const data = {
             "status": "Alive",
             "species": "Human",
             "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-        }
+        },
         {
             "name": "Morty Smith",
             "status": "Alive",
