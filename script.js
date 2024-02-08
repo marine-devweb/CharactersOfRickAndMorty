@@ -1,7 +1,12 @@
-// API https://rickandmortyapi.com/
-
 // récupère chaque élément du document HTML avec l'ID "characters-container"
 const charactersContainer = document.getElementById("characters-container");
+
+// API https://rickandmortyapi.com/
+// Fetch est une fonction intégrée nous permettant de charger les données du serveur.
+fetch('https://rickandmortyapi.com/api/character')
+// réponse en format JSON
+.then(response => response.json())
+
 // boucle forEach pour itérer sur chaque élément du tableau characters + actions
 data.characters.forEach(character => {
     const card = document.createElement("div");
