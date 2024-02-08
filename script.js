@@ -20,3 +20,11 @@ const data = {
         }
     ]
 }
+// récupère chaque élément du document HTML avec l'ID "characters-container"
+const charactersContainer = document.getElementById("characters-container");
+// boucle forEach pour itérer sur chaque élément du tableau characters + actions
+data.characters.forEach(character => {
+    const card = document.createElement("div");
+    card.className = "card";
+    charactersContainer.appendChild(card);
+});
